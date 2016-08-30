@@ -1,6 +1,6 @@
-import packageJson from '../../package.json';
+import packageJson from '../../package.json'
 import {
-	Platform
+	Platform,
 } from 'react-native'
 
 export default {
