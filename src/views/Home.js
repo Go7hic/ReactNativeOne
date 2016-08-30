@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
   View,
   Text,
@@ -20,7 +20,7 @@ class Home extends React.Component {
 
 
   render() {
-    return(
+    return (
       <View style={styles.container}>
         <Header title="ONE" foreground="dark" style={{ backgroundColor: '#fff' }} />
       </View>
@@ -28,8 +28,8 @@ class Home extends React.Component {
   }
 }
 export const LayoutComponent = Home
-export function mapStateToProps(state, props) {
+export function mapStateToProps(state) {
   return {
-    vol: state.val
+    vol: state.val,
   }
 }

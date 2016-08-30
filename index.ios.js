@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
-} from 'react-native';
+  View,
+} from 'react-native'
 
 import { Provider } from 'react-redux'
 import Navigation from './src/components/Navigation'
@@ -22,4 +22,4 @@ class ReactNativeOne extends Component {
 }
 
 
-AppRegistry.registerComponent('ReactNativeOne', () => ReactNativeOne);
+AppRegistry.registerComponent('ReactNativeOne', () => ReactNativeOne)
