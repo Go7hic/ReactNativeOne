@@ -1,6 +1,6 @@
 const baseUrl = 'http://v3.wufazhuce.com:8000/api'
 const api = {
-  homePage: `${baseUrl}/hp/more/`, // 首页，返回过去十天的 Vol
+  homePage: `${baseUrl}/hp/more/0`, // 首页，返回过去十天的 Vol
 
   readingCarousel: `${baseUrl}/reading/carousel`, // 阅读页面的幻灯片
   readingIndex: `${baseUrl}/reading/index/`, // 阅读列表
