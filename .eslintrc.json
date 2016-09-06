@@ -4,6 +4,9 @@
     "commonjs": true,
     "es6": true
   },
+  "globals": {
+    "__DEV__": true
+  },
   "extends": "airbnb",
   "parserOptions": {
     "ecmaFeatures": {

@@ -1,23 +1,22 @@
-import { Platform } from 'react-native'
+import { Platform, AsyncStorage } from 'react-native'
 import { persistStore, autoRehydrate } from 'redux-persist'
-import {AsyncStorage } from 'react-native'
-import { createStore, applyMiddleware, compose } from 'redux';
-import thunkMiddleware from 'redux-thunk';
-import devTools from 'remote-redux-devtools';
-import reducer from '../reducers';
-import promiseMiddleware from './promiseMiddleware';
+import { createStore, applyMiddleware, compose } from 'redux'
+import thunkMiddleware from 'redux-thunk'
+import devTools from 'remote-redux-devtools'
+import reducer from '../reducers'
+import promiseMiddleware from './promiseMiddleware'
 
-let middlewares = [
-    thunkMiddleware,
-    promiseMiddleware,
-];
+const middlewares = [
+  thunkMiddleware,
+  promiseMiddleware,
+]
 
 export default function configureStore(initialState) {
   const enhancer = compose(
     devTools({
       name: Platform.OS,
       hostname: 'localhost',
-      port: 5678
+      port: 5678,
     })
   )
   const collegeStore = applyMiddleware(

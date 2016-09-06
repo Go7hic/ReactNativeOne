@@ -21,5 +21,4 @@ class ReactNativeOne extends Component {
   }
 }
 
-
 AppRegistry.registerComponent('ReactNativeOne', () => ReactNativeOne)

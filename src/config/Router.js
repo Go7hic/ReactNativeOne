@@ -6,9 +6,7 @@ import {
 } from 'react-native'
 import { connect } from 'react-redux'
 import * as Home from '../views/Home'
-
 import connectComponent from '../utils/connectComponent'
-
 export default class Router {
   constructor(navigator) {
     this.navigator = navigator
@@ -25,7 +23,6 @@ export default class Router {
     }
   }
 
-
   replace(props = {}, route) {
     route.props = props
     route.sceneConfig = route.sceneConfig ? route.sceneConfig : Navigator.SceneConfigs.FloatFromRight
@@ -41,8 +38,8 @@ export default class Router {
   }
 
   push(props = {}, route) {
-    let routesList = this.navigator.getCurrentRoutes()
-    let nextIndex = routesList[routesList.length - 1].index + 1
+    const routesList = this.navigator.getCurrentRoutes()
+    const nextIndex = routesList[routesList.length - 1].index + 1
     route.props = props
     route.index = nextIndex
     route.sceneConfig = route.sceneConfig ? route.sceneConfig : Navigator.SceneConfigs.FloatFromRight

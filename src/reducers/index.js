@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 import vol from './vol'
 const rootReducer = combineReducers({
- vol,
+  vol,
 })
 
 export default rootReducer
