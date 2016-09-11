@@ -25,7 +25,7 @@ class Home extends React.Component {
   }
   componentDidMount() {
     const { actions } = this.props
-
+    
     actions.getVolRequest()
   }
   render() {
